@@ -2,12 +2,14 @@
   "name": "studio-demo2",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://morookakotaro.github.io/amplify-studio-demo/",
   "dependencies": {
     "@aws-amplify/ui-react": "^2.1.4",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "aws-amplify": "^4.3.10",
+    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "^2.1.3",
@@ -17,7 +19,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
